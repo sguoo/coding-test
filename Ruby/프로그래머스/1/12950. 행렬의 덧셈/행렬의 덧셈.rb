@@ -1,0 +1,1 @@
+def solution(arr1, arr2) (0...arr1.size).map { |x| (0...arr1[x].size).map { |y| (arr1[x][y] + arr2[x][y])} } end
