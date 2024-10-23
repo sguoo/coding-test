@@ -1,0 +1,1 @@
+def solution(phone_number) "*" * (phone_number.size - phone_number[-4..].size) + phone_number[-4..] end
