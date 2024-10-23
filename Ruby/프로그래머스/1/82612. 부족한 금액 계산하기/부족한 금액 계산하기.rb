@@ -1,0 +1,1 @@
+def solution(price, money, count) ((1..count).map { |x| price * x}.sum - money) > 0 ? ((1..count).map { |x| price * x}.sum - money) : 0 end
