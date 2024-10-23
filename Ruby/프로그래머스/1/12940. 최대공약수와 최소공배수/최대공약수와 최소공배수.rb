@@ -1,0 +1,1 @@
+def solution(n, m) [n.gcd(m), n.lcm(m)] end
