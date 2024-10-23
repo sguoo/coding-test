@@ -1,0 +1,1 @@
+def solution(n) n.even? ? "수박" * (n / 2) : ("수박" * (n / 2)) + "수" end
