@@ -1,0 +1,1 @@
+def solution(absolutes, signs) (0...absolutes.length).map { |x| signs[x] ? absolutes[x] : absolutes[x] * -1 }.sum end
