@@ -1,0 +1,1 @@
+def solution(arr) arr.length > 1 ? arr - [arr.min] : [-1] end
