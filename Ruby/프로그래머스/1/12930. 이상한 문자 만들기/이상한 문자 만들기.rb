@@ -1,0 +1,1 @@
+def solution(s) s.split(/(\s+)/).map { |w| w =~ /\s+/ ? w : w.chars.each_with_index.map { |c, i| i.even? ? c.upcase : c.downcase }.join }.join end
