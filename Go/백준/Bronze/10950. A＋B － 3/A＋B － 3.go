@@ -1,0 +1,1 @@
+package main;import "fmt";func main() {var i, p, q int;fmt.Scan(&i);k := make([]int, i);for j := 0; j < i; j++ {fmt.Scan(&p, &q);k[j] = p + q};for w := 0; w < i; w++ {fmt.Println(k[w])}}
