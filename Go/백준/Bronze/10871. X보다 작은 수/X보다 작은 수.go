@@ -1,22 +1,26 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 )
 
 func main() {
+	read := bufio.NewReader(os.Stdin)
+	writer := bufio.NewWriter(os.Stdout)
+	defer writer.Flush()
 	var i, sml int
-	fmt.Scan(&i)
-	fmt.Scan(&sml)
+	fmt.Fscan(read, &i, &sml)
 	j := make([]int, i)
 
 	for k := 0; k < i; k++ {
-		fmt.Scan(&j[k])
+		fmt.Fscan(read, &j[k])
 	}
 
 	for k := 0; k < i; k++ {
 		if j[k] < sml {
-			fmt.Print(j[k], " ")
+			fmt.Fprint(writer, j[k], " ")
 		}
 	}
 }
